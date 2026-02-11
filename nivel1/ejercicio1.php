@@ -1,22 +1,22 @@
 <?php
 
-class Empleado {
-    public $nombre;
-    public $sueldo;
+class Employee {
+    public $name;
+    public $salary;
 
-    public function __construct($nombre, $sueldo) {
-        $this->nombre = $nombre;
-        $this->sueldo = $sueldo;
+    public function __construct($name, $salary) {
+        $this->name = $name;
+        $this->salary = $salary;
     }
-    public function pagarTax() {
-        return $this->sueldo > 6000
+    public function payTaxes() {
+        return $this->salary > 6000
         ? "Tendrá que pagar impuestos."
         : "Sueldo mínimo. No paga impuestos.";
     }
 }
 
-$empleado1 = new Empleado("Desiree", 800);
+$employee1 = new Employee("Desiree", 800);
 
-echo $empleado1->pagarTax();
+echo $employee1->payTaxes();
 
 ?>

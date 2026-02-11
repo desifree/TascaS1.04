@@ -16,7 +16,10 @@ class Employee {
 }
 
 $employee1 = new Employee("Desiree", 800);
+$employee2 = new Employee("David", 7000);
 
-echo $employee1->payTaxes();
+
+echo "- " . $employee1->name . ": " . $employee1->payTaxes() . PHP_EOL;
+echo "- " . $employee2->name . ": " . $employee2->payTaxes() . PHP_EOL;
 
 ?>
